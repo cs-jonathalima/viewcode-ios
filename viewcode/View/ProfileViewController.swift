@@ -7,19 +7,21 @@
 //
 
 import UIKit
+import PureLayout
 
 class ProfileViewController: UIViewController {
 
+    var profileView: ProfileView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        profileView = ProfileView(frame: .zero)
+        
+        self.view.addSubview(profileView)
+        
+        profileView.autoPinEdgesToSuperviewEdges(with: .zero)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
