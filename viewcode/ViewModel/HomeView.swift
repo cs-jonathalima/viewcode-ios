@@ -12,6 +12,9 @@ import PureLayout
 class HomeView: UIView {
     
     let cellId = "cellId"
+    let headerId = "headerId"
+    let footerId = "footerId"
+    
     var shouldSetupConstraint = true
     
     var tableView: UITableView!
